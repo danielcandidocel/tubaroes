@@ -1,0 +1,68 @@
+body{
+    padding: 30px;
+}
+#titulo{
+    text-align: center;
+    height: 60px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.calculo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.button a{
+    background: #043D81;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+    
+}
+.calculo label{
+    width: 250px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.calculo input{
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid;
+}
+.calculos{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.calculos label, .calculos span{
+    font-size: 16px;
+}
+.calculos span{
+    font-weight: bold;
+}
+.total,
+.total45,
+.total5,
+.total55,
+.total6{
+    background: #eee;
+    min-width: 230px;
+}
+.total h3,
+.total45 h3,
+.total5 h3,
+.total55 h3,
+.total6 h3{
+    padding-top: -15px;
+    height: 45px;
+    border-bottom: 1px solid #000;
+    background: transparent;
+}

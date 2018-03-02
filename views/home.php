@@ -28,7 +28,7 @@
     </head>
     <body>
         <div class="home">
-                <img src="logo.png" alt="" width="500"/>
+                <img src="<?php echo BASE_URL;?>assets/images/logo.png" alt="" width="500"/>
                 <h1>Em Construção. Em Breve GRANDES Promoções!</h1>
        </div>
    
