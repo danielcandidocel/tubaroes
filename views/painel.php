@@ -12,10 +12,12 @@
 <div class="total">
     <label>INSS: </label>
     <span id="inss"></span><br/>
-    <label>Valor Final: </label>
-    <span id="vfinal"></span><br/>
+    <label>Custo do Produto: </label>
+    <span id="custo"></span><br/>
     <label>Lucro: </label>
-    <span id="lucro"></span>
+    <span id="lucro"></span><br/>
+     <label>Valor Sugerido de Venda: </label>
+    <span id="venda"></span>
 </div>
 <div class="button">
     <a href="javascript:;" onclick="calcular()"><span>Calcular</span></a>
