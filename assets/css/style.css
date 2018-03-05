@@ -1,6 +1,18 @@
 body{
-    padding: 30px;
+    padding:50px;
+     min-height: 800px;
 }
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
+
 #titulo{
     text-align: center;
     height: 60px;
@@ -10,6 +22,27 @@ body{
     flex-direction: column;
     
 }
+
+.button a{
+    background: #043D81;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+    
+}
+
+.calculos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.calculos label, .calculos span{
+    font-size: 16px;
+}
+.calculos span{
+    font-weight: bold;
+}
 .calculo{
     display: flex;
     flex-direction: column;
@@ -18,14 +51,6 @@ body{
     border: 3px solid;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.button a{
-    background: #043D81;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #FFF;
-    
 }
 .calculo label{
     width: 250px;
@@ -37,17 +62,6 @@ body{
     border: 0;
     border-bottom: 1px solid;
 }
-.calculos{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-}
-.calculos label, .calculos span{
-    font-size: 16px;
-}
-.calculos span{
-    font-weight: bold;
-}
 .total,
 .total45,
 .total5,
@@ -55,14 +69,51 @@ body{
 .total6{
     background: #eee;
     min-width: 230px;
+    min-height: 200px;
 }
 .total h3,
 .total45 h3,
 .total5 h3,
 .total55 h3,
 .total6 h3{
+    text-align: center;
     padding-top: -15px;
     height: 45px;
+    line-height: 45px;
     border-bottom: 1px solid #000;
     background: transparent;
+}
+.parcelas{
+    margin-top: 10px;
+    background: #ebcccc;
+}
+/*Iniciando CSS Footer*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer img {
+    max-width: 50px;
+    margin: 15px;
+}
+@media (max-width:600px){
+    .home h1 {
+        text-align: center;
+    }
+    .home img {
+        max-width: 280px;
+    }
+    .footer {
+        justify-content: space-between;
+    }
+    .footer img{
+        margin:0;
+    }
+    .calculos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

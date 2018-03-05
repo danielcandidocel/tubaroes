@@ -3,7 +3,7 @@
 class homecontroller extends controller {
     public function index() {
         $dados = array();
-        $this->loadTemplate('home', $dados);
+        $this->loadTemplatePrototipo('home', $dados);
     }
    
 }

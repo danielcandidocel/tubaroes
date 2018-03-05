@@ -37,80 +37,33 @@
         <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/jquery-ui.min.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/jquery-ui.structure.min.css" type="text/css" />
         
-        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/style.css" />
         
-        <title>Tubaroes Outlet</title>
+        <title>Tubarões Outlet</title>
     </head>
 <body>
     <header>
-        
-            <div class="topo">
-                <div class="topo-container">
-                    <div class="topo-msg">
-                        <h6>O Melhor Preço é Aqui.</h6>
-                    </div>
-                    <div class="topo-interage">
-                        <a href="https://www.facebook.com/tubaroesoutlet/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/tubaroesoutlet/" target="_blank" alt="Instagram Tubaões Outlet"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="far fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="topo-topo">
-                <div class="topo-container">
-                    <div class="logo">
-                        <a href="#"><img src="<?php echo BASE_URL;?>assets/images/logo-preto-branco.png" /></a>
-                    </div>
-                    <div class="topo-busca">
-                        <form>
-                            <input type="text" id="buscar" />
-                            <button type="submit" class="button-buscar"><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
-                    </div>
-                    <div class="topo-carrinho">
-                        <h5>Entrar</h5>
-                        <i class="fas fa-shopping-cart"></i>
-                        
-                    </div>
-                </div>
-            </div>
-        <div class="categorias">
-            <div class="topo-container cat">
-                <?php $n = 0;
-                foreach ($viewData['categorias'] as $cat): 
-                    
-                    ?>
-                    <div class="categoria">
-                       
-                        <a href="<?php echo BASE_URL;?>categorias/abrir/<?php echo $cat['nome'];?>"><?php echo strtoupper($cat['nome']);?></a>
-                        <?php if($n <= count($cat)): ?>
-                        |
-                        <?php $n++;
-                            endif;
-                        ?>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+        <div class="login">
+            <?php if (isset($_SESSION['tubaLogin']) && !empty($_SESSION['tubaLogin'])):?>
+                <a href="<?php echo BASE_URL; ?>login/sair">Sair</a>
+            <?php else: ?>
+                <a href="<?php echo BASE_URL; ?>login">Login</a>
+            <?php endif;?>
         </div>
-                  
     </header>
-     
-        <?php $this->loadViewInTemplate($viewName, $viewData); ?>
+    
+        <?php $this->loadViewInTemplatePrototipo($viewName, $viewData); ?>
  
 <footer>
-    
+ 
 </footer>
     <script type="text/javascript">
         var BASE_URL = '<?php echo BASE_URL; ?>';
     </script>
-    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.zoom.js"></script>
-    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.zoom.min.js"></script>
-    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery-ui.min.js"></script>
+   
     
-    <script src="<?php echo BASE_URL; ?>assets/js/script_produto.js" type="text/javascript"></script>
-    
-    <script src="<?php echo BASE_URL; ?>assets/js/modais.js" type="text/javascript"></script>
-    <script src="<?php echo BASE_URL; ?>assets/js/slide_produtos_home.js" type="text/javascript"></script>
+    <script src="<?php echo BASE_URL; ?>assets/js/script.js" type="text/javascript"></script>
+ 
     
 </body>
 </html>
