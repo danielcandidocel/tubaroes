@@ -76,7 +76,7 @@
             </div>
         <div class="categorias">
             <div class="topo-container cat">
-                <?php $n = 0;
+                <?php $n = -1;
                 foreach ($viewData['categorias'] as $cat): 
                     
                     ?>
@@ -98,7 +98,26 @@
         <?php $this->loadViewInTemplate($viewName, $viewData); ?>
  
 <footer>
-    
+    <div class="rodape">
+        <div class="rodape-info">
+            
+            
+        </div>
+        <div class="rodape-copy">
+            <div class="menus">
+                <a href="#">Sobre Nós</a>
+                <a href="#">Como Comprar</a>
+                <a href="#">Métodos de Pagamento</a>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Perguntas Frequentes</a>
+            </div>
+            <div class="copyright">
+                <div>© <span>Tubarões Outlet</span> - Todos Direitos Reservados.</div>
+                <div>Desenvolvido por  <a href="http://www.jlcreative.com.br" target="_blanc">JL Creative</a></div>
+            </div>
+        </div>
+    </div>
 </footer>
     <script type="text/javascript">
         var BASE_URL = '<?php echo BASE_URL; ?>';

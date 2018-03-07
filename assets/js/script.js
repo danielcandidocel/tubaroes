@@ -58,8 +58,8 @@ function calcular() {
         }
 
 //    Calculo do Lucro Real
-    
-    var lucroreal = lucro-(v-venda);
+  
+    var lucroreal = venda-custo;
     var totalLucro = lucroreal.toFixed(2).replace('.',',');
     var total = '';
         total = 'RS '+totalLucro;
@@ -182,7 +182,7 @@ function calcular() {
         }
 //    Calculo do Lucro Real
     
-    var lucroreal = lucro-(v-venda);
+    var lucroreal = venda-custo;
     var totalLucro = lucroreal.toFixed(2).replace('.',',');
     var total = '';
         total = 'RS '+totalLucro;
@@ -305,7 +305,7 @@ function calcular() {
     
 //    Calculo do Lucro Real
     
-    var lucroreal = lucro-(v-venda);
+    var lucroreal = venda-custo;
     var totalLucro = lucroreal.toFixed(2).replace('.',',');
     var total = '';
         total = 'RS '+totalLucro;
@@ -429,7 +429,7 @@ function calcular() {
 
 //    Calculo do Lucro Real
     
-    var lucroreal = lucro-(v-venda);
+    var lucroreal = venda-custo;
     var totalLucro = lucroreal.toFixed(2).replace('.',',');
     var total = '';
         total = 'RS '+totalLucro;
@@ -552,7 +552,7 @@ function calcular() {
         
 //    Calculo do Lucro Real
     
-    var lucroreal = lucro-(v-venda);
+    var lucroreal = venda-custo;
     var totalLucro = lucroreal.toFixed(2).replace('.',',');
     var total = '';
         total = 'RS '+totalLucro;

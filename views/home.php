@@ -1,4 +1,4 @@
-
+<div class="home-container">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -48,4 +48,5 @@
             <div class="linha"></div>
         </div>
     </div>
+</div>
 </div>
