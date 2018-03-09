@@ -100,8 +100,47 @@
 <footer>
     <div class="rodape">
         <div class="rodape-info">
-            
-            
+            <div class="informacoes">
+                <h4>INFORMAÇÕES</h4>
+                <div></div>
+                <ul>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Como Comprar</a></li>
+                    <li><a href="">Métodos de Pagamento</a></li>
+                    <li><a href="">Fale Conosco</a></li>
+                    <li><a href="">Política de Privacidade</a></li>
+                    <li><a href="">Perguntas Frequentes</a></li>
+                    
+                </ul>
+            </div>
+            <div class="contatos">
+                <h4>NOSSOS CONTATOS</h4>
+                <div></div>
+                <ul>
+                    <li>contato@tubaroesoutlet.com.br</li>
+                    <li>Rua Donato Caruso Filho, 151</li>
+                    <li>Jd Regis - São Paulo/SP CEP 04811-180</li>
+                    <li>(35)99100-5750</li>                    
+                </ul>
+            </div>
+            <div class="pagamentos">
+                 <h4>PAGAMENTO E CONFIABILIDADE</h4>
+                <div></div>
+                <ul>
+                    <li>contato@tubaroesoutlet.com.br</li>
+                    <li>Rua Donato Caruso Filho,</li>
+                    <li>(35)99100-5750</li>                    
+                </ul>
+            </div>
+            <div class="redes">
+                 <h4>SIGA NOSSAS REDES SOCIAIS</h4>
+                <div></div>
+                <ul>
+                    <li>contato@tubaroesoutlet.com.br</li>
+                    <li>Rua Donato Caruso Filho, 151 -</li>
+                    <li>(35)99100-5750</li>                    
+                </ul>
+            </div>
         </div>
         <div class="rodape-copy">
             <div class="menus">

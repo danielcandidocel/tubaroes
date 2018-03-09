@@ -39,14 +39,46 @@
 
 <!--View dos Produtos da Home-->
 <div class="produtos-home">
-    <div class="conteudo-produtos-home">
-        <div class="titulo-produtos-home">
-            <div class="linha"></div>
-            <div class="titulo">
-                <h4>PRODUTOS EM DESTAQUE</h4>
+    <div class="width-home">
+        <div class="conteudo-produtos-home">
+            <div class="titulo-produtos-home">
+                <div class="linha"></div>
+                <div class="titulo">
+                    <h4>PRODUTOS EM DESTAQUE</h4>
+                </div>
+                <div class="linha"></div>
             </div>
-            <div class="linha"></div>
         </div>
+        <section class="produtos">
+            <?php 
+            foreach ($viewData['listHome'] as $produto): ?>
+            <article id="article-home">
+                <a href="<?php echo BASE_URL.'produto/abrir/'.$produto['slug'];?>">
+                <div class="produto-home-imagem">
+                    <img src="<?php echo BASE_URL.'assets/images/produtos/'.$produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>"/>
+                </div>
+                </a>
+                <div class="produto-home-marca">
+                    <p><?php echo $produto['marca']; ?></p>
+                </div>
+                <div class="produto-home-nome">
+                    <h2><?php echo utf8_encode($produto['nome']); ?></h2>  
+                </div>
+                <div class="produto-home-valor">
+                    <?php if(isset($produto['valor_de'])): ?>
+                    <p><del>R$ <?PHP echo number_format($produto['valor_de'], 2, ',', '.');?></del> - <strong> Por: R$ <?PHP echo number_format($produto['valor_vista'], 2, ',', '.');?></strong></p>
+                    <?php endif; ?>
+                </div>
+                <div class="produto-home-parcela">
+                    <?php if(isset($produto['parcela'])): ?>
+                    <p><strong> Até 12 x R$ <?PHP echo number_format($produto['parcela'], 2, ',', '.');?></strong></p>
+                    <?php endif; ?>
+                </div>
+                
+            </article>
+            <?php endforeach; ?>
+
+        </section>
     </div>
 </div>
 </div>

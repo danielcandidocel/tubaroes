@@ -98,12 +98,20 @@ header{
 }
 /*Inocio CSS Produtos da HOME*/
 .home-container{
-   height: 800px;
+   height: auto;
 }
 .produtos-home{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    
+}
+.width-home{
+    width: 1045px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .conteudo-produtos-home{
     display: flex;
@@ -130,6 +138,48 @@ header{
     width: 300px;
     border-bottom: 2px solid #ccc;
 }
+.produtos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom:57px;
+    flex-wrap: wrap;
+}
+#article-home{
+    height: 450px;
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#article-home a:hover{
+    opacity: 0.8;
+}
+.produto-home-imagem{
+    min-height: 300px;
+    min-width: 247px;
+}
+.produto-home-marca{
+    color:#9f9f9f;
+    text-align: center;
+}
+.produto-home-nome h2{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color:#000;
+}
+.produto-home-valor {
+    text-align: center;
+    color:#000;
+    font-size: 15px;
+}
+.produto-home-parcela {
+    text-align: center;
+    color:#000;
+    font-size: 17px;
+}
 
 /*Fim CSS Produtos Home
 Inicio CSS Rodape*/
@@ -139,6 +189,31 @@ Inicio CSS Rodape*/
 .rodape-info{
     height: 600px;
     background: #212121;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    padding-top: 40px;
+    color:#FFF;
+}
+.informacoes div, .contatos div, .pagamentos div, .redes div{
+    width:30px;
+    height: 5px;   
+    border-bottom: 4px solid #FFF;
+}
+.rodape-info ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    padding-top: 30px;
+}
+.rodape-info ul li{
+    margin-bottom: 15px;
+    font-size: 15px;
+    
+}
+.rodape-info ul li a{
+    color:#fff;
+    text-decoration: none;
 }
 .rodape-copy{
     height: 80px;
